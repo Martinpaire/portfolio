@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Martin Pairetti</title>
+    <!-- Tailwind CSS desde CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+
+    <!-- NAVEGACIÓN -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+        <nav class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center" aria-label="Navegación principal">
+            <span class="font-bold text-xl text-indigo-400">&lt;MartinDev /&gt;</span>
+            <ul class="flex gap-6 text-sm font-medium">
+                <li><a href="#hero" class="hover:text-indigo-400 transition-colors">Inicio</a></li>
+                <li><a href="#sobre-mi" class="hover:text-indigo-400 transition-colors">Sobre mí</a></li>
+                <li><a href="#proyectos" class="hover:text-indigo-400 transition-colors">Proyectos</a></li>
+                <li><a href="#contacto" class="hover:text-indigo-400 transition-colors">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-24">
+
+        <!-- 1. HERO -->
+        <section id="hero" class="flex flex-col md:flex-row items-center justify-between gap-8 py-12">
+            <div class="space-y-4 max-w-xl">
+                <span class="text-indigo-400 font-mono text-sm">Hola, mi nombre es</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">Martin Enrique Pairetti</h1>
+                <p class="text-xl text-slate-400">Estudiante de Ingeniería en Sistemas Informáticos</p>
+                <p class="text-slate-300">Apasionado por la tecnología, el desarrollo de software y la resolución de problemas lógicos mediante código limpio, estructurado y eficiente.</p>
+                <div class="flex gap-4 pt-4">
+                    <a href="#proyectos" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-5 py-2.5 rounded-lg transition-all">Ver proyectos</a>
+                    <a href="#contacto" class="border border-slate-700 hover:border-slate-500 text-slate-300 font-semibold px-5 py-2.5 rounded-lg transition-all">Contactarme</a>
+                </div>
+            </div>
+            <div class="w-48 h-48 md:w-64 md:h-64 rounded-full bg-indigo-950 border-4 border-indigo-500/30 flex items-center justify-center overflow-hidden">
+                <span class="text-indigo-400 font-mono text-3xl font-bold">MP</span>
+            </div>
+        </section>
+
+        <!-- 2. SOBRE MÍ -->
+        <section id="sobre-mi" class="space-y-6 border-t border-slate-800 pt-16">
+            <h2 class="text-3xl font-bold text-slate-100">Sobre mí</h2>
+            <p class="text-slate-300 leading-relaxed">
+                Soy estudiante de Ingeniería en Sistemas Informáticos en la Universidad Abierta Interamericana (UAI Rosario). Me enfoco en comprender la arquitectura de software, la lógica de programación y el desarrollo de aplicaciones funcionales aplicando buenas prácticas de diseño y control de versiones.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6 pt-4">
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50">
+                    <h3 class="font-bold text-indigo-400 mb-3">Desarrollo Web</h3>
+                    <ul class="text-slate-300 text-sm space-y-2">
+                        <li>• HTML5 / CSS3</li>
+                        <li>• JavaScript (ES6+)</li>
+                        <li>• Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50">
+                    <h3 class="font-bold text-indigo-400 mb-3">Backend & Bases de Datos</h3>
+                    <ul class="text-slate-300 text-sm space-y-2">
+                        <li>• C# / .NET</li>
+                        <li>• Programación Orientada a Objetos</li>
+                        <li>• SQL / Bases de Datos Relacionales</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50">
+                    <h3 class="font-bold text-indigo-400 mb-3">Herramientas & Métodos</h3>
+                    <ul class="text-slate-300 text-sm space-y-2">
+                        <li>• Git / GitHub</li>
+                        <li>• Visual Studio Code</li>
+                        <li>• Análisis de Sistemas / UML</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PROYECTOS -->
+        <section id="proyectos" class="space-y-6 border-t border-slate-800 pt-16">
+            <h2 class="text-3xl font-bold text-slate-100">Proyectos Académicos y Personales</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Proyecto 1 -->
+                <article class="bg-slate-800/60 rounded-xl p-6 border border-slate-700/60 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-bold text-slate-100">Sistema de Gestión de Inventario</h3>
+                        <p class="text-slate-400 text-sm">Aplicación desarrollada para la gestión y procesamiento estructurado de catálogos de productos y control de stock.</p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-xs bg-indigo-950 text-indigo-300 px-2.5 py-1 rounded-full font-mono">C#</span>
+                            <span class="text-xs bg-indigo-950 text-indigo-300 px-2.5 py-1 rounded-full font-mono">SQL</span>
+                            <span class="text-xs bg-indigo-950 text-indigo-300 px-2.5 py-1 rounded-full font-mono">POO</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 pt-2 text-sm font-medium">
+                        <a href="https://github.com/Martinpaire/portfolio" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:underline">Ver Repositorio &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="bg-slate-800/60 rounded-xl p-6 border border-slate-700/60 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-bold text-slate-100">Modelado y Análisis de Sistemas (UML)</h3>
+                        <p class="text-slate-400 text-sm">Diseño de diagramas de robustez, casos de uso y requerimientos para plataformas de gestión y descarga de software.</p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-xs bg-indigo-950 text-indigo-300 px-2.5 py-1 rounded-full font-mono">UML</span>
+                            <span class="text-xs bg-indigo-950 text-indigo-300 px-2.5 py-1 rounded-full font-mono">Análisis</span>
+                            <span class="text-xs bg-indigo-950 text-indigo-300 px-2.5 py-1 rounded-full font-mono">Casos de Uso</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 pt-2 text-sm font-medium">
+                        <a href="https://github.com/Martinpaire/portfolio" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:underline">Ver Repositorio &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article class="bg-slate-800/60 rounded-xl p-6 border border-slate-700/60 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-bold text-slate-100">Portfolio Web Profesional</h3>
+                        <p class="text-slate-400 text-sm">Sitio web personal responsive desarrollado para presentar mi perfil académico y profesional con despliegue continuo.</p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-xs bg-indigo-950 text-indigo-300 px-2.5 py-1 rounded-full font-mono">HTML5</span>
+                            <span class="text-xs bg-indigo-950 text-indigo-300 px-2.5 py-1 rounded-full font-mono">Tailwind</span>
+                            <span class="text-xs bg-indigo-950 text-indigo-300 px-2.5 py-1 rounded-full font-mono">Git</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 pt-2 text-sm font-medium">
+                        <a href="https://github.com/Martinpaire/portfolio" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:underline">Ver Repositorio &rarr;</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 4. CONTACTO -->
+        <section id="contacto" class="space-y-6 border-t border-slate-800 pt-16">
+            <h2 class="text-3xl font-bold text-slate-100">Contacto</h2>
+            <p class="text-slate-300">Podés escribirme por correo electrónico o visitar mi perfil de GitHub.</p>
+            <div class="flex flex-wrap gap-6 items-center text-sm">
+                <a href="mailto:pairettimartin@gmail.com" class="text-indigo-400 hover:underline">pairettimartin@gmail.com</a>
+                <a href="https://github.com/Martinpaire" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white border border-slate-700 px-4 py-2 rounded-lg">GitHub: Martinpaire</a>
+            </div>
+            <form class="max-w-md space-y-4 pt-4">
+                <div>
+                    <label for="nombre" class="block text-sm font-medium text-slate-300 mb-1">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-indigo-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-slate-300 mb-1">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-indigo-500">
+                </div>
+                <div>
+                    <label for="mensaje" class="block text-sm font-medium text-slate-300 mb-1">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-indigo-500"></textarea>
+                </div>
+                <button type="submit" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-5 py-2 rounded-lg transition-colors">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-800 mt-24 py-8 text-center text-slate-500 text-sm">
+        <p>© 2026 Martin Enrique Pairetti - Desarrollado con HTML5 y Tailwind CSS</p>
+    </footer>
+
+</body>
+</html>
